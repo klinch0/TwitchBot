@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System;
+using System.Diagnostics;
 using TwitchLib.Client;
 using TwitchLib.Client.Enums;
 using TwitchLib.Client.Events;
@@ -102,6 +103,7 @@ namespace TwitchBot
             if (e.ChatMessage.CustomRewardId == "962f6227-1e5f-45c2-bf1d-434294cea0ef")
             {
                 // скример
+                Process.Start(@"..\..\..\..\KunQa_Twith\bin\Debug\net6.0-windows\KunQa_Twith.exe");
             }
 
             if (e.ChatMessage.Message.Contains("badword"))
