@@ -99,6 +99,11 @@ namespace TwitchBot
 
             }
 
+            if (e.ChatMessage.CustomRewardId == "962f6227-1e5f-45c2-bf1d-434294cea0ef")
+            {
+                // скример
+            }
+
             if (e.ChatMessage.Message.Contains("badword"))
                 client.TimeoutUser(e.ChatMessage.Channel, e.ChatMessage.Username, TimeSpan.FromMinutes(30), "Bad word! 30 minute timeout!");
         }
